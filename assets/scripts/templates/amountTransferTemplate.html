@@ -1,0 +1,40 @@
+<form class="well form-horizontal">
+	<div class="control-group">
+		<label class="control-label" for="account-number">Account</label>
+		<div class="controls">
+			<input type="text" name="account-number" id="account-number"
+				class="span3" placeholder="Account Number" />
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label" for="amount-to-be-transfer">Amount</label>
+		<div class="controls">
+
+			<span class="input-prepend input-append"> <span class="add-on">$</span>
+				<input class="span2" id="amount-to-be-transfer" type="text">
+				<span class="add-on">.00</span>
+
+			</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-right text-warning">Current
+				Balance :- $10000.00</span>
+
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label" for="remark">Amount</label>
+		<div class="controls">
+			<input type="text" name="remark" id="remark" class="span3"
+				placeholder="Add a Remark" />
+		</div>
+	</div>
+
+
+	<div class="control-group">
+		<div class="controls">
+			<Button id="transfer-now-btn" class="btn btn-primary btn-small"
+				title="Click this button to transfer the money to selected Account"
+				data-toggle="tooltip" data-animation=true data-placement="bottom">Add
+				Account</Button>
+		</div>
+	</div>
+
+</form>

@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css">
+
+
+</head>
+<body>
+	<div class="well" align="center">
+			<h2>
+				<span class="text-left"><img src="assets/img/b.png"
+					class="img-circle" />&nbsp;&nbsp;&nbsp;&nbsp;</span>Beneficiary Bank
+			</h2>
+	</div>
+	<div id="header" class="container">
+		<ul class="nav nav-tabs">
+			<li id="home" class="active"><a href="#home-container"><i
+					class="icon-home"></i> Home</a></li>
+			<li id="add-account"><a href="#add-account-container"><i
+					class="icon-plus-sign"></i> Add Account</a></li>
+			<li><a href="#check-balance-container"><i
+					class=" icon-briefcase"></i> Check Balance</a></li>
+			<li><a href="#transfer-amount-container"><i
+					class="icon-share-alt"></i> Transfer Amount</a></li>
+			<li><a href="#contact-us-container"><i
+					class="icon-envelope"></i> Contact Us</a></li>
+		</ul>
+
+	</div>
+	<div id="main-container" class="tab-content">
+		<div id="home-container" class="tab-pane container  active">
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Integer posuere erat a ante.</p>
+				<small>Someone famous <cite title="Madhur Garg">Madhur
+						Garg</cite></small>
+			</blockquote>
+		</div>
+
+		<div id="add-account-container" class="tab-pane container">
+			<form class="well form-horizontal">
+				<div class="control-group">
+					<label class="control-label" for="account-number">Account
+						Number</label>
+					<div class="controls">
+						<input type="text" name="account-number" id="account-number"
+							class="span3" placeholder="Account Number" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="account-holder-name">Account
+						Holder's Name</label>
+					<div class="controls">
+						<input type="text" name="account-holder-name"
+							id="account-holder-name" class="span3"
+							placeholder="Account Holder's Name" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="bank-name">Bank Name</label>
+					<div class="controls">
+						<input type="text" name="bank-name" id="bank-name" class="span3"
+							placeholder="Bank Name" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="ifsc-code">IFSC Code</label>
+					<div class="controls">
+						<input type="text" name="ifsc-code" id="ifsc-code" class="span3"
+							placeholder="IFSC Code" />
+						<button id="find-ifsc-code" class="btn disabled"
+							title="We will add this functionality later"
+							data-toggle="tooltip" data-animation=true data-placement="right">
+							Find IFSC Code</button>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="controls">
+						<Button id="add-account-btn" class="btn btn-primary btn-small"
+							title="Click this button to add this Accout to your Accounts"
+							data-toggle="tooltip" data-animation=true data-placement="bottom">Add
+							Account</Button>
+						<input type="reset" value="Clear" class="btn btn-small" />
+					</div>
+				</div>
+
+			</form>
+
+			<div class="divider"></div>
+			<table id="account-table" class="table table-bordered table-hover">
+				<caption>Accounts List</caption>
+				<thead>
+					<tr class="success">
+						<th>Account Number
+						</th>
+						<th>Account Holder's Name
+						</th>
+						<th>Bank Name
+						</th>
+						<th>IFSC Code
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+
+		</div>
+
+		<div id="check-balance-container" class="tab-pane container">
+
+				<h4 align="center">Your Current Balance is: 10000</h4>
+			<hr>
+			<table id="statement-table"
+				class="table table-bordered table-striped">
+				<caption>Statement Till Date</caption>
+				<thead>
+					<tr>
+						<th>Date</th>
+						<th>Amount</th>
+						<th>CR/DR</th>
+						<th>Remarks</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Today's Date</td>
+						<td>10000</td>
+						<td>CR</td>
+						<td>Sample Transaction</td>
+					</tr>
+					<tr>
+						<td>Today's Date</td>
+						<td>10000</td>
+						<td>CR</td>
+						<td>Sample Transaction</td>
+					</tr>
+					<tr>
+						<td>Today's Date</td>
+						<td>10000</td>
+						<td>CR</td>
+						<td>Sample Transaction</td>
+					</tr>
+					<tr>
+						<td>Today's Date</td>
+						<td>10000</td>
+						<td>CR</td>
+						<td>Sample Transaction</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="transfer-amount-container" class="tab-pane container">
+			<form class="well form-horizontal">
+				<div class="control-group">
+					<label class="control-label" for="account-number">Account</label>
+					<div class="controls">
+						<input type="text" name="account-number" id="account-number"
+							class="span3" placeholder="Account Number" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="amount-to-be-transfer">Amount</label>
+					<div class="controls">
+
+						<span class="input-prepend input-append"> <span
+							class="add-on">$</span> <input class="span2"
+							id="amount-to-be-transfer" type="text"> <span
+							class="add-on">.00</span>
+
+						</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-right text-warning">Current
+							Balance :- $10000.00</span>
+
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="remark">Amount</label>
+					<div class="controls">
+						<input type="text" name="remark" id="remark" class="span3"
+							placeholder="Add a Remark" />
+					</div>
+				</div>
+
+
+				<div class="control-group">
+					<div class="controls">
+						<Button id="transfer-now-btn" class="btn btn-primary btn-small"
+							title="Click this button to transfer the money to selected Account"
+							data-toggle="tooltip" data-animation=true data-placement="bottom">Add
+							Account</Button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<div id="contact-us-container" class="tab-pane container">
+			<h3>Contact us:</h3>
+			<address>
+				<strong>Inflow Inc.</strong><br> 795 Folsom Ave, Suite 600<br>
+				San Francisco, CA 94107<br> <abbr title="Phone">P:</abbr> (123)
+				456-7890<br> <abbr title="Fax">F:</abbr> (123) 456-7891
+			</address>
+
+			<address>
+				<strong>Inflow Admin</strong><br> <a href="mailto:#">inflow.admin@example.com</a>
+			</address>
+		</div>
+	</div>
+
+	<div align="center" style="position: fixed; width: 100%; bottom: 0" class="well">
+			<p>
+				This site is designed and maintained by <a
+					href="http://twitter.com/mdo" target="_blank">@madhurpgarg@gmail.com</a>
+			</p>
+	</div>
+
+
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<!-- <script data-main="scripts/main" src="assets/scripts/libs/require/require.js"></script> -->
+	<script src="assets/scripts/libs/bootstrap.min.js"></script>
+	
+	<script>
+		$(function() {
+			
+			
+			$('#header>ul>li a').click(function(e) {
+				e.preventDefault();
+				$('#header>ul>li.active').removeClass("active");
+				console.log(this);
+				$(this).tab('show');
+			});
+			
+			
+			/* console.log($('#find-ifsc-code'));
+			$('#find-ifsc-code').click(function(e) {
+				e.preventDefault();
+			}).tooltip();
+			$('#transfer-now-btn').click(function(e) {
+				e.preventDefault();
+			}).tooltip();
+
+			$('#add-account-btn').click(
+					function(e) {
+						e.preventDefault();
+						console.log("button clicked")
+						addDataToTable($('#account-number').val(), $(
+								'#account-holder-name').val(), $('#bank-name')
+								.val(), $('#ifsc-code').val());
+					}).tooltip();
+
+			addDataToTable = function(accountNumber, accountHolderName,
+					bankName, ifscCode) {
+				console.log(accountNumber + " " + accountHolderName + " "
+						+ bankName + " " + ifscCode);
+				var accountDetailsRow = "<tr><td>" + accountNumber
+						+ "</td><td>" + accountHolderName + "</td><td>"
+						+ bankName + "</td><td>" + ifscCode + "</td></tr>"
+				$('#account-table').children('tbody').append(accountDetailsRow)
+			} */
+		});
+	</script>
+</body>
+</html>

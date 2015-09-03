@@ -1,0 +1,51 @@
+<form id="add-account-form" class="well form-horizontal">
+	<div class="control-group">
+		<label class="control-label" for="account-number">Account
+			Number</label>
+		<div class="controls">
+			<input type="text" name="account-number" id="account-number"
+				class="span3" placeholder="Account Number" />
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label" for="account-holder-name">Account
+			Holder's Name</label>
+		<div class="controls">
+			<input type="text" name="account-holder-name"
+				id="account-holder-name" class="span3"
+				placeholder="Account Holder's Name" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label" for="bank-name">Bank Name</label>
+		<div class="controls">
+			<input type="text" name="bank-name" id="bank-name" class="span3"
+				placeholder="Bank Name" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label" for="ifsc-code">IFSC Code</label>
+		<div class="controls">
+			<input type="text" name="ifsc-code" id="ifsc-code" class="span3"
+				placeholder="IFSC Code" />
+			<button id="find-ifsc-code" class="btn disabled"
+				title="We will add this functionality later" data-toggle="tooltip"
+				data-animation=true data-placement="right">Find IFSC Code</button>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="controls">
+			<Button id="add-account-btn" class="btn btn-primary btn-small"
+				title="Click this button to add this Accout to your Accounts"
+				data-toggle="tooltip" data-animation=true data-placement="bottom">Add
+				Account</Button>
+			<input type="reset" value="Clear" class="btn btn-small" />
+		</div>
+	</div>
+
+</form>
+
+

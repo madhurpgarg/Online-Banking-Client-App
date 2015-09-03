@@ -1,0 +1,23 @@
+<table id="account-table" class="table table-bordered table-hover">
+	<caption>Accounts List</caption>
+	<thead>
+		<tr class="success">
+			<th>Account Number</th>
+			<th>Account Holder's Name</th>
+			<th>Bank Name</th>
+			<th>IFSC Code</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% _.each(beneficiaryAccounts, function(account) { %>
+
+		<tr>
+			<td><%= account.accountNumber %></td>
+			<td><%= account.accountHolderName %></td>
+			<td><%= account.bankName %></td>
+			<td><%= account.ifscCode %></td>
+		</tr>
+
+		<% }); %>
+	</tbody>
+</table>
